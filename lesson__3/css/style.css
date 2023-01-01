@@ -1,0 +1,52 @@
+* {
+	color: rgb(3, 3, 87);
+}
+body{
+	background-color: rgba(7, 80, 217, 0.383);
+}
+a {
+	color: rgb(149, 21, 21);
+}
+img{
+	width: 100%;
+	opacity: 90%;
+}
+
+.text{
+	color: rgb(5, 43, 255);
+}
+
+#white{
+	color: white;
+}
+
+/* не працює тому що "конкретність\пріоритнетність" нижча 
+div.text {
+	color: azure;
+}
+*/
+
+.lesson.text{
+	color: rgb(91, 46, 226);
+}
+
+
+.other p{
+	color: rgb(90, 1, 1);
+}
+
+.other > p{
+	color: rgb(3, 29, 160);
+}
+
+.tilda ~ p{
+	color: rgb(73, 103, 172);
+}
+
+.plus + p{
+	color: rgba(32, 148, 20, 0.773);
+}
+
+.lesson, .yellow {
+	color: rgba(247, 237, 100, 0.854);
+}
