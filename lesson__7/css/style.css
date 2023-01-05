@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+@font-face {
+	font-family: "CircularStd";
+	src: url("../fonts/CircularStd-Book.woff2") format("woff2"),
+		url("../fonts/CircularStd-Book.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "CircularStd";
+	src: url("../fonts/CircularStd-BookItalic.woff2") format("woff2"),
+		url("../fonts/CircularStd-BookItalic.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "CircularStd";
+	src: url("../fonts/CircularStd-Medium.woff2") format("woff2"),
+		url("../fonts/CircularStd-Medium.woff") format("woff");
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "CircularStd";
+	src: url("../fonts/CircularStd-Bold.woff2") format("woff2"),
+		url("../fonts/CircularStd-Bold.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Amerika";
+	src: url("../fonts/AMERIKA_.woff2") format("woff2"),
+		url("../fonts/AMERIKA_.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+body {
+	font-family: "Lato";
+	color: #e0f8f4;
+	background-image: url(../img/back.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+[class*='__container']{
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+
+.title{
+	font-family: "Lato";
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 20px;
+}
+
+.background {
+	background-color: #563ed27f;
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.background__container {
+	text-align: center;
+	background-color: #0000ff46;
+}
+
+.gradient{
+	background: linear-gradient(90deg, rgba(153,68,163,0.8547794117647058) 0%, rgba(28,9,121,0.7791491596638656) 39%, rgba(0,212,255,1) 100%);
+	margin-bottom: 10px;
+}
+
+.opacity {
+	margin: 0 auto;
+	position: relative;
+	height: 300px;
+	width: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.opacity::before{
+	content: "";
+	background-image: url('../img/Aurora.jpg');
+	border-radius: 30px;
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0.65;
+}
+
+.opacity__container {
+	color: #fff;
+	position: relative;
+	font-size: 20px;
+	font-weight: bold;
+	text-shadow: 20px 10px 20px#c1cef2cb;
+}
+
