@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+body {
+	font-family: "Lato";
+	color: #424551;
+}
+
+[class*="__container"] {
+	max-width: 1230px;
+	margin: 0 auto;
+}
+.page {
+	max-width: 810px;
+	margin: 0 auto;
+}
+.page__container {
+}
+.page__title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1e212c;
+	margin-bottom: 26px;
+}
+.page__image {
+	text-align: center;
+	margin-bottom: 60px;
+}
+.page__image img {
+	max-width: 100%;
+}
+
+.page__text-main {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+	color: #1e212c;
+	margin-bottom: 24px;
+}
+.page__text {
+	line-height: 160%;
+	margin-bottom: 48px;
+}
+
+.page__text p {
+	margin-bottom: 22px;
+}
+
+.page__text ul {
+	margin-bottom: 24px;
+}
+
+.page__text li {
+	padding-left: 32px;
+	margin-bottom: 4px;
+	background: url(../img/icons/check.png) 0 6px no-repeat;
+}
+
+.page__blockquote {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+	color: #1e212c;
+	padding-left: 58px;
+	margin-bottom: 48px;
+
+	background: url(../img/icons/braces.png) 0 0 no-repeat;
+}
+
+hr{
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-width: 3px;
+}
+
+.link{
+	display: inline-block;
+	font-size: 30px;
+	min-height: 50px;
+	margin-bottom: 30px;
+	
+}
+
+.link:hover{
+	font-size: 40px;
+	color: #0b3cee; 
+	text-decoration: underline;
+}
+
+.link:active{
+	color: #c60254;
+	background: #c602543c;
+	border-radius: 10px;
+	text-decoration: underline;
+}
+
+.block{
+	max-width: 600px;
+	background-color: #0b3cee40;
+	padding: 15px;
+	border-radius: 20px;
+	margin-bottom: 30px;
+}
+
+.block:hover{
+	max-width: 800px;
+}
+
+.block__item{
+	opacity: 0;
+	visibility: hidden;
+}
+
+.block:hover .block__item{
+	visibility: visible;
+	opacity: 1;
+}
+
+a:visited{
+	color: #c60202;
+}
+
+.links{
+	margin-bottom: 30px;
+}
+
+
+.menu{
+	min-height: 150px;
+}
+ul ul{
+	display: none;
+}
+
+ul li:hover ul{
+	display: block;
+}
+.text p:not(:last-child){
+	margin-bottom: 15px;
+}
+
+.text *:first-child{
+	background: #4b6ce369;
+}
+
+.text p:first-of-type{
+	color: #c60202;
+}
+
+.text p:nth-child(odd){
+	text-transform: uppercase;
+}
+
+.text p:nth-child(even){
+	background-color: rgba(220, 147, 147, 0.512);
+}
+
+.text p:last-child{
+	text-decoration: underline;
+}
+
+.pseudo{
+	text-align: center;
+	padding: 20px;
+	margin: 20px;
+	background: #0b3cee51;
+}
+span::before{
+	content: "->";
+}
+
+span::after{
+	content: "<-";
+}
+
+.pseudoblock::before{
+	content: "((";
+}
+
+.pseudoblock::after{
+	content: "))";
+}
+
+.pseudo__item{
+	margin-left: 50px;
+}
+
+.pseudo__items{
+	margin-bottom: 10px;
+}
+
+.pseudo__items::before{
+	content: "";
+	background: url(../img/icons/check.png) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 10px;
+}
